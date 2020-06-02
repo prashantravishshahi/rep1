@@ -1,10 +1,5 @@
 #### JSON To CSV Converter
-
-This is a modified version of [json-to-csv](https://github.com/SEL-Columbia/json-to-csv) project.
-
-This code can be used for generating a flat CSV file from a list of JSON Objects.
-The [JSONFlattener](https://github.com/Arkni/json-to-csv/blob/master/src/main/java/org/jsontocsv/parser/JSONFlattener.java) will create list of key-value pairs for the generated JSON.
-The [CSVWriter](https://github.com/Arkni/json-to-csv/blob/master/src/main/java/org/jsontocsv/writer/CSVWriter.java) would write the key value pairs to the specified file.
+This code converts JSON to CSV.
 
 #### Usage:
 
@@ -96,7 +91,6 @@ flatJson = JSONFlattener.parseJson(new File("files/simple.json"), "UTF-8");
 // Using ';' as separator
 CSVWriter.writeToFile(CSVWriter.getCSV(flatJson, ";"), "files/sample_file.csv");
 ```
-- CSV output (see [/files/sample_file.csv](https://github.com/Arkni/json-to-csv/blob/master/files/sample_file.csv) file):
 ```csv
 Age;subjects[1].marks;subjects[1].name;subjects[2].marks;subjects[2].name;studentName;subjects[3].marks;subjects[3].name
 12;40;English;50;History;Foo;;
@@ -126,20 +120,14 @@ CSVWriter.writeToFile(CSVWriter.getCSV(flatJson, "\t"), "files/sample_uri.csv");
 for this example, I used the web service [echo.jsontest.com](http://echo.jsontest.com) to echo a JSON object like the following
 ```json
 {
-	"firstName": "Brahim",
-	"lastName": "Arkni"
+	"firstName": "Prashant",
+	"lastName": "Shahi"
 }
 ```
 
-- CSV output (see [/files/sample_uri.csv](https://github.com/Arkni/json-to-csv/blob/master/files/sample_file.csv) file):
+- CSV output 
 ```csv
 lastName	firstname
-Arkni		Brahim
+Shahi		Prashant
 ```
 
-#### N.B:
-- The column names would dynamically be generated based on the keys in the JSON object.
-- The order of the JSON keys will not preserved during JSON conversion to CSV, See this [StackOverFlow question](http://stackoverflow.com/questions/4515676/keep-the-order-of-the-json-keys-during-json-conversion-to-csv) for more information.
-
-
-The sample output files can be seen [here](https://github.com/Arkni/json-to-csv/blob/master/files).
