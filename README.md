@@ -33,7 +33,7 @@ CSVWriter.writeToFile(CSVWriter.getCSV(flatJson), "files/sample_string.csv");
 - CSV output:
 ```csv
 lastName,firstname
-Arkni,Brahim
+Shahi,Prashant
 ```
 2 - Using a JSON file:
 
