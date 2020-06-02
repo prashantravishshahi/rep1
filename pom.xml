@@ -35,14 +35,14 @@
 	</properties>
 
 	<dependencies>
-		<!-- JSON.org -->
+		<!-- JSON.org - ->
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>${org.json.version}</version>
 		</dependency>
 
-		<!-- APACHE COMMONS LANG -->
+		<!-- APACHE  COMMONS LANG -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
