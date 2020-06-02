@@ -13,8 +13,8 @@ The [CSVWriter](https://github.com/Arkni/json-to-csv/blob/master/src/main/java/o
 - JSON string:
 ```json
 {
-	"firstName": "Brahim",
-	"lastName": "Arkni"
+	"firstName": "Prashant",
+	"lastName": "Shahi"
 }
 ```
 
@@ -143,6 +143,3 @@ Arkni		Brahim
 
 
 The sample output files can be seen [here](https://github.com/Arkni/json-to-csv/blob/master/files).
-
-#### Licence
-See the [LICENCE](https://github.com/Arkni/json-to-csv/blob/master/LICENCE) file.
